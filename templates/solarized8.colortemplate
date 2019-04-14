@@ -67,7 +67,7 @@ else
 endverbatim
 
   # Opaque background
-  Normal            base1             back
+  Normal            base0             back
   FoldColumn        base0             base02
   Folded            base0             base02            bold s=base03
   LineNr            base01            base02

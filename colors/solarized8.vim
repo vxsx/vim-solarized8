@@ -4,7 +4,7 @@
 " Maintainer:   Lifepillar <lifepillar@lifepillar.me>
 " Website:      https://github.com/lifepillar/vim-solarized8
 " License:      OSI approved MIT license
-" Last Updated: Sun Apr 14 22:01:55 2019
+" Last Updated: Sun Apr 14 22:08:26 2019
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < (get(g:, 'solarized_use16', &t_Co < 256) ? 16 : 256))
@@ -52,7 +52,7 @@ if !get(g:, 'solarized_use16', &t_Co < 256)
       hi Terminal ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
       hi CursorLineNr ctermbg=NONE guifg=NONE
     else
-      hi Normal ctermfg=247 ctermbg=235 guifg=#93a1a1 guibg=#002b36 guisp=NONE cterm=NONE gui=NONE
+      hi Normal ctermfg=246 ctermbg=235 guifg=#839496 guibg=#002b36 guisp=NONE cterm=NONE gui=NONE
       hi FoldColumn ctermfg=246 ctermbg=236 guifg=#839496 guibg=#073642 guisp=NONE cterm=NONE gui=NONE
       hi Folded ctermfg=246 ctermbg=236 guifg=#839496 guibg=#073642 guisp=#002b36 cterm=NONE,bold gui=NONE,bold
       hi LineNr ctermfg=242 ctermbg=236 guifg=#586e75 guibg=#073642 guisp=NONE cterm=NONE gui=NONE
@@ -804,7 +804,7 @@ if &background ==# 'dark'
     hi Terminal ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi CursorLineNr ctermbg=NONE guifg=NONE
   else
-    hi Normal ctermfg=14 ctermbg=8 guifg=#93a1a1 guibg=#002b36 guisp=NONE cterm=NONE gui=NONE
+    hi Normal ctermfg=12 ctermbg=8 guifg=#839496 guibg=#002b36 guisp=NONE cterm=NONE gui=NONE
     hi FoldColumn ctermfg=12 ctermbg=0 guifg=#839496 guibg=#073642 guisp=NONE cterm=NONE gui=NONE
     hi Folded ctermfg=12 ctermbg=0 guifg=#839496 guibg=#073642 guisp=#002b36 cterm=NONE,bold gui=NONE,bold
     hi LineNr ctermfg=10 ctermbg=0 guifg=#586e75 guibg=#073642 guisp=NONE cterm=NONE gui=NONE
@@ -1548,7 +1548,7 @@ finish
 "   Folded             fg                none             bold s=base03
 "   LineNr             base01            none
 "   Terminal           fg                none
-"   Normal            base1             back
+"   Normal            base0             back
 "   FoldColumn        base0             base02
 "   Folded            base0             base02            bold s=base03
 "   LineNr            base01            base02

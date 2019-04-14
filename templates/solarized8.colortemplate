@@ -55,7 +55,7 @@ if !has('gui_running') && get(g:, '@optionprefix_termtrans', 0)
 endverbatim
 
   # Transparent background
-  Normal             base1             none
+  Normal             base0             none
   FoldColumn         fg                none
   Folded             fg                none             bold s=base03
   LineNr             base01            none

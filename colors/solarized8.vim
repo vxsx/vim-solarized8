@@ -4,7 +4,7 @@
 " Maintainer:   Lifepillar <lifepillar@lifepillar.me>
 " Website:      https://github.com/lifepillar/vim-solarized8
 " License:      OSI approved MIT license
-" Last Updated: Sun Apr 14 22:08:26 2019
+" Last Updated: Sun Apr 14 22:11:10 2019
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running')
       \ && (!exists('&t_Co') || &t_Co < (get(g:, 'solarized_use16', &t_Co < 256) ? 16 : 256))
@@ -45,14 +45,14 @@ if !get(g:, 'solarized_use16', &t_Co < 256)
       let g:terminal_color_15='#fdf6e3'
     endif
     if !has('gui_running') && get(g:, 'solarized_termtrans', 0)
-      hi Normal ctermfg=246 ctermbg=NONE guifg=#839496 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+      hi Normal ctermfg=247 ctermbg=NONE guifg=#93a1a1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
       hi FoldColumn ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
       hi Folded ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=#002b36 cterm=NONE,bold gui=NONE,bold
       hi LineNr ctermfg=242 ctermbg=NONE guifg=#586e75 guibg=NONE guisp=NONE cterm=NONE gui=NONE
       hi Terminal ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
       hi CursorLineNr ctermbg=NONE guifg=NONE
     else
-      hi Normal ctermfg=246 ctermbg=235 guifg=#839496 guibg=#002b36 guisp=NONE cterm=NONE gui=NONE
+      hi Normal ctermfg=247 ctermbg=235 guifg=#93a1a1 guibg=#002b36 guisp=NONE cterm=NONE gui=NONE
       hi FoldColumn ctermfg=246 ctermbg=236 guifg=#839496 guibg=#073642 guisp=NONE cterm=NONE gui=NONE
       hi Folded ctermfg=246 ctermbg=236 guifg=#839496 guibg=#073642 guisp=#002b36 cterm=NONE,bold gui=NONE,bold
       hi LineNr ctermfg=242 ctermbg=236 guifg=#586e75 guibg=#073642 guisp=NONE cterm=NONE gui=NONE
@@ -413,14 +413,14 @@ if !get(g:, 'solarized_use16', &t_Co < 256)
     let g:terminal_color_15='#fdf6e3'
   endif
   if !has('gui_running') && get(g:, 'solarized_termtrans', 0)
-    hi Normal ctermfg=242 ctermbg=NONE guifg=#586e75 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi Normal ctermfg=66 ctermbg=NONE guifg=#657b83 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi FoldColumn ctermfg=66 ctermbg=NONE guifg=#657b83 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi Folded ctermfg=66 ctermbg=NONE guifg=#657b83 guibg=NONE guisp=#fdf6e3 cterm=NONE,bold gui=NONE,bold
     hi LineNr ctermfg=247 ctermbg=NONE guifg=#93a1a1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi Terminal ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi CursorLineNr ctermbg=NONE guifg=NONE
   else
-    hi Normal ctermfg=242 ctermbg=230 guifg=#586e75 guibg=#fdf6e3 guisp=NONE cterm=NONE gui=NONE
+    hi Normal ctermfg=66 ctermbg=230 guifg=#657b83 guibg=#fdf6e3 guisp=NONE cterm=NONE gui=NONE
     hi FoldColumn ctermfg=66 ctermbg=254 guifg=#657b83 guibg=#eee8d5 guisp=NONE cterm=NONE gui=NONE
     hi Folded ctermfg=66 ctermbg=254 guifg=#657b83 guibg=#eee8d5 guisp=#fdf6e3 cterm=NONE,bold gui=NONE,bold
     hi LineNr ctermfg=247 ctermbg=254 guifg=#93a1a1 guibg=#eee8d5 guisp=NONE cterm=NONE gui=NONE
@@ -797,14 +797,14 @@ if &background ==# 'dark'
     let g:terminal_color_15='#fdf6e3'
   endif
   if !has('gui_running') && get(g:, 'solarized_termtrans', 0)
-    hi Normal ctermfg=12 ctermbg=NONE guifg=#839496 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+    hi Normal ctermfg=14 ctermbg=NONE guifg=#93a1a1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi FoldColumn ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi Folded ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=#002b36 cterm=NONE,bold gui=NONE,bold
     hi LineNr ctermfg=10 ctermbg=NONE guifg=#586e75 guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi Terminal ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
     hi CursorLineNr ctermbg=NONE guifg=NONE
   else
-    hi Normal ctermfg=12 ctermbg=8 guifg=#839496 guibg=#002b36 guisp=NONE cterm=NONE gui=NONE
+    hi Normal ctermfg=14 ctermbg=8 guifg=#93a1a1 guibg=#002b36 guisp=NONE cterm=NONE gui=NONE
     hi FoldColumn ctermfg=12 ctermbg=0 guifg=#839496 guibg=#073642 guisp=NONE cterm=NONE gui=NONE
     hi Folded ctermfg=12 ctermbg=0 guifg=#839496 guibg=#073642 guisp=#002b36 cterm=NONE,bold gui=NONE,bold
     hi LineNr ctermfg=10 ctermbg=0 guifg=#586e75 guibg=#073642 guisp=NONE cterm=NONE gui=NONE
@@ -1165,14 +1165,14 @@ if has('nvim')
   let g:terminal_color_15='#fdf6e3'
 endif
 if !has('gui_running') && get(g:, 'solarized_termtrans', 0)
-  hi Normal ctermfg=10 ctermbg=NONE guifg=#586e75 guibg=NONE guisp=NONE cterm=NONE gui=NONE
+  hi Normal ctermfg=11 ctermbg=NONE guifg=#657b83 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi FoldColumn ctermfg=11 ctermbg=NONE guifg=#657b83 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Folded ctermfg=11 ctermbg=NONE guifg=#657b83 guibg=NONE guisp=#fdf6e3 cterm=NONE,bold gui=NONE,bold
   hi LineNr ctermfg=14 ctermbg=NONE guifg=#93a1a1 guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi Terminal ctermfg=fg ctermbg=NONE guifg=fg guibg=NONE guisp=NONE cterm=NONE gui=NONE
   hi CursorLineNr ctermbg=NONE guifg=NONE
 else
-  hi Normal ctermfg=10 ctermbg=15 guifg=#586e75 guibg=#fdf6e3 guisp=NONE cterm=NONE gui=NONE
+  hi Normal ctermfg=11 ctermbg=15 guifg=#657b83 guibg=#fdf6e3 guisp=NONE cterm=NONE gui=NONE
   hi FoldColumn ctermfg=11 ctermbg=7 guifg=#657b83 guibg=#eee8d5 guisp=NONE cterm=NONE gui=NONE
   hi Folded ctermfg=11 ctermbg=7 guifg=#657b83 guibg=#eee8d5 guisp=#fdf6e3 cterm=NONE,bold gui=NONE,bold
   hi LineNr ctermfg=14 ctermbg=7 guifg=#93a1a1 guibg=#eee8d5 guisp=NONE cterm=NONE gui=NONE
@@ -1543,12 +1543,12 @@ finish
 " Color: back                 #002b36                ~        8
 " TermCursor        -> Cursor
 " TermCursorNC         base03            base01
-"   Normal             base0             none
+"   Normal             base1             none
 "   FoldColumn         fg                none
 "   Folded             fg                none             bold s=base03
 "   LineNr             base01            none
 "   Terminal           fg                none
-"   Normal            base0             back
+"   Normal            base1             back
 "   FoldColumn        base0             base02
 "   Folded            base0             base02            bold s=base03
 "   LineNr            base01            base02
@@ -1870,12 +1870,12 @@ finish
 " Color: back                 #fdf6e3                ~        15
 " TermCursor        -> Cursor
 " TermCursorNC         base03            base01
-"   Normal             base1             none
+"   Normal             base0             none
 "   FoldColumn         base0             none
 "   Folded             base0             none              bold s=base03
 "   LineNr             base01            none
 "   Terminal           fg                none
-"   Normal            base1             back
+"   Normal            base0             back
 "   FoldColumn        base0             base02
 "   Folded            base0             base02            bold s=base03
 "   LineNr            base01            base02
